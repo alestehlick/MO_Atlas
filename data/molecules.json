@@ -1,0 +1,109 @@
+{
+  "molecules": {
+    "methane": {
+      "name": "Methane",
+      "formula": "CH4",
+      "charge": 0,
+      "multiplicity": 1,
+      "unit": "Angstrom",
+      "geometry": [
+        ["C", 0.000000, 0.000000, 0.000000],
+        ["H", 0.629118, 0.629118, 0.629118],
+        ["H", -0.629118, -0.629118, 0.629118],
+        ["H", -0.629118, 0.629118, -0.629118],
+        ["H", 0.629118, -0.629118, -0.629118]
+      ],
+      "calculation": {
+        "method": "RHF",
+        "basis": "STO-3G",
+        "keywords": "RHF STO-3G TightSCF XYZFile",
+        "nprocs": 8,
+        "maxcore": 1000,
+        "cube_grid": 80
+      },
+      "symmetry": {
+        "point_group": "Td",
+        "elements": [
+          {
+            "type": "axis",
+            "order": 3,
+            "label": "C3 through H1",
+            "direction": [1, 1, 1]
+          },
+          {
+            "type": "axis",
+            "order": 3,
+            "label": "C3 through H2",
+            "direction": [-1, -1, 1]
+          },
+          {
+            "type": "axis",
+            "order": 3,
+            "label": "C3 through H3",
+            "direction": [-1, 1, -1]
+          },
+          {
+            "type": "axis",
+            "order": 3,
+            "label": "C3 through H4",
+            "direction": [1, -1, -1]
+          },
+          {
+            "type": "axis",
+            "order": 2,
+            "label": "C2 x-axis",
+            "direction": [1, 0, 0]
+          },
+          {
+            "type": "axis",
+            "order": 2,
+            "label": "C2 y-axis",
+            "direction": [0, 1, 0]
+          },
+          {
+            "type": "axis",
+            "order": 2,
+            "label": "C2 z-axis",
+            "direction": [0, 0, 1]
+          },
+          {
+            "type": "plane",
+            "kind": "sigma_d",
+            "label": "σd: x = y",
+            "normal": [1, -1, 0]
+          },
+          {
+            "type": "plane",
+            "kind": "sigma_d",
+            "label": "σd: x = -y",
+            "normal": [1, 1, 0]
+          },
+          {
+            "type": "plane",
+            "kind": "sigma_d",
+            "label": "σd: x = z",
+            "normal": [1, 0, -1]
+          },
+          {
+            "type": "plane",
+            "kind": "sigma_d",
+            "label": "σd: x = -z",
+            "normal": [1, 0, 1]
+          },
+          {
+            "type": "plane",
+            "kind": "sigma_d",
+            "label": "σd: y = z",
+            "normal": [0, 1, -1]
+          },
+          {
+            "type": "plane",
+            "kind": "sigma_d",
+            "label": "σd: y = -z",
+            "normal": [0, 1, 1]
+          }
+        ]
+      }
+    }
+  }
+}

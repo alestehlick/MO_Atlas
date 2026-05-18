@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MO Atlas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <header>
+        <div class="small-title">MO Atlas</div>
+        <h1>Molecular Orbital Deck</h1>
+      </header>
+
+      <section class="panel">
+        <label for="deck-select">Molecule</label>
+        <select id="deck-select"></select>
+        <button id="load-button">Load deck</button>
+      </section>
+
+      <section class="panel">
+        <div id="molecule-name" class="molecule-name">—</div>
+        <div id="molecule-meta" class="molecule-meta">—</div>
+      </section>
+
+      <section class="panel">
+        <label for="orbital-select">Orbital</label>
+        <select id="orbital-select"></select>
+        <div id="orbital-info" class="orbital-info">—</div>
+      </section>
+
+      <section class="panel">
+        <label for="iso-slider">
+          Isovalue: <span id="iso-value-label">0.035</span>
+        </label>
+        <input id="iso-slider" type="range" min="0.010" max="0.120" step="0.005" value="0.035">
+      </section>
+
+      <section class="panel">
+        <div class="section-title">Display</div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="show-orbital" checked>
+          Orbital surface
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="show-symmetry" checked>
+          Symmetry elements
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="show-axes" checked>
+          Axes
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="show-planes">
+          Planes
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="show-labels" checked>
+          Labels
+        </label>
+      </section>
+
+      <section class="panel legend">
+        <div><span class="swatch positive"></span> positive phase</div>
+        <div><span class="swatch negative"></span> negative phase</div>
+        <div><span class="swatch axis"></span> rotation axis</div>
+        <div><span class="swatch plane"></span> mirror plane</div>
+      </section>
+    </aside>
+
+    <main class="viewer-wrap">
+      <div id="viewer"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

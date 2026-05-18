@@ -1,0 +1,11 @@
+{
+  "decks": [
+    {
+      "id": "methane",
+      "name": "Methane",
+      "formula": "CH4",
+      "point_group": "Td",
+      "manifest": "methane/manifest.json"
+    }
+  ]
+}

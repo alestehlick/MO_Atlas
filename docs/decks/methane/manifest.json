@@ -1,0 +1,231 @@
+{
+  "id": "methane",
+  "name": "Methane",
+  "formula": "CH4",
+  "charge": 0,
+  "multiplicity": 1,
+  "method": "RHF",
+  "basis": "STO-3G",
+  "keywords": "RHF STO-3G TightSCF XYZFile",
+  "homo_orca_number": 4,
+  "lumo_orca_number": 5,
+  "molecule_xyz": "molecule.xyz",
+  "orbitals": [
+    {
+      "orca_number": 0,
+      "label": "MO 0",
+      "role": "occupied",
+      "occupation": 2.0,
+      "energy_hartree": -11.030266,
+      "energy_ev": -300.1488,
+      "cube": "cubes/mo_000.cube"
+    },
+    {
+      "orca_number": 1,
+      "label": "MO 1",
+      "role": "occupied",
+      "occupation": 2.0,
+      "energy_hartree": -0.908658,
+      "energy_ev": -24.7258,
+      "cube": "cubes/mo_001.cube"
+    },
+    {
+      "orca_number": 2,
+      "label": "MO 2",
+      "role": "occupied",
+      "occupation": 2.0,
+      "energy_hartree": -0.51787,
+      "energy_ev": -14.092,
+      "cube": "cubes/mo_002.cube"
+    },
+    {
+      "orca_number": 3,
+      "label": "MO 3",
+      "role": "occupied",
+      "occupation": 2.0,
+      "energy_hartree": -0.51787,
+      "energy_ev": -14.092,
+      "cube": "cubes/mo_003.cube"
+    },
+    {
+      "orca_number": 4,
+      "label": "MO 4",
+      "role": "HOMO",
+      "occupation": 2.0,
+      "energy_hartree": -0.51787,
+      "energy_ev": -14.092,
+      "cube": "cubes/mo_004.cube"
+    },
+    {
+      "orca_number": 5,
+      "label": "MO 5",
+      "role": "LUMO",
+      "occupation": 0.0,
+      "energy_hartree": 0.713316,
+      "energy_ev": 19.4103,
+      "cube": "cubes/mo_005.cube"
+    },
+    {
+      "orca_number": 6,
+      "label": "MO 6",
+      "role": "virtual",
+      "occupation": 0.0,
+      "energy_hartree": 0.713316,
+      "energy_ev": 19.4103,
+      "cube": "cubes/mo_006.cube"
+    },
+    {
+      "orca_number": 7,
+      "label": "MO 7",
+      "role": "virtual",
+      "occupation": 0.0,
+      "energy_hartree": 0.713316,
+      "energy_ev": 19.4103,
+      "cube": "cubes/mo_007.cube"
+    },
+    {
+      "orca_number": 8,
+      "label": "MO 8",
+      "role": "virtual",
+      "occupation": 0.0,
+      "energy_hartree": 0.750997,
+      "energy_ev": 20.4357,
+      "cube": "cubes/mo_008.cube"
+    }
+  ],
+  "symmetry": {
+    "point_group": "Td",
+    "elements": [
+      {
+        "type": "axis",
+        "order": 3,
+        "label": "C3 through H1",
+        "direction": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "type": "axis",
+        "order": 3,
+        "label": "C3 through H2",
+        "direction": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "type": "axis",
+        "order": 3,
+        "label": "C3 through H3",
+        "direction": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      {
+        "type": "axis",
+        "order": 3,
+        "label": "C3 through H4",
+        "direction": [
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "type": "axis",
+        "order": 2,
+        "label": "C2 x-axis",
+        "direction": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "type": "axis",
+        "order": 2,
+        "label": "C2 y-axis",
+        "direction": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "type": "axis",
+        "order": 2,
+        "label": "C2 z-axis",
+        "direction": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "type": "plane",
+        "kind": "sigma_d",
+        "label": "σd: x = y",
+        "normal": [
+          1,
+          -1,
+          0
+        ]
+      },
+      {
+        "type": "plane",
+        "kind": "sigma_d",
+        "label": "σd: x = -y",
+        "normal": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "type": "plane",
+        "kind": "sigma_d",
+        "label": "σd: x = z",
+        "normal": [
+          1,
+          0,
+          -1
+        ]
+      },
+      {
+        "type": "plane",
+        "kind": "sigma_d",
+        "label": "σd: x = -z",
+        "normal": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "type": "plane",
+        "kind": "sigma_d",
+        "label": "σd: y = z",
+        "normal": [
+          0,
+          1,
+          -1
+        ]
+      },
+      {
+        "type": "plane",
+        "kind": "sigma_d",
+        "label": "σd: y = -z",
+        "normal": [
+          0,
+          1,
+          1
+        ]
+      }
+    ]
+  }
+}

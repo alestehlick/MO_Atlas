@@ -1,0 +1,13 @@
+﻿# ORCA working files
+# These can be regenerated locally and should not be uploaded.
+calculations/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
